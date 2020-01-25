@@ -1,5 +1,5 @@
 ﻿
-namespace SoloProjects.Dudhit.Utilities
+namespace Net.Dudhit.Utilities
 {
   public struct SeHSV
   {
@@ -24,8 +24,8 @@ namespace SoloProjects.Dudhit.Utilities
     public StandardHSV(float h, float s, float v)
     {
       this.H = (h>=0&&h<=360)?h:0;
-      this.S = (s>=0&&s<=100)?s:0;
-      this.V = (v>=0&&v<=100)?v:0;
+      this.S = (s>=0&&s<=1)?s:0;
+      this.V = (v>=0&&v<=1)?v:0;
     }
   }
 
